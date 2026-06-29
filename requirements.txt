@@ -1,0 +1,3 @@
+# No external ML libraries required — uses Python stdlib + these only
+numpy>=1.24.0
+pandas>=1.5.0
