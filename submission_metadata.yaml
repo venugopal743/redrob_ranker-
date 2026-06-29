@@ -1,0 +1,23 @@
+team_name: akulasanith18
+team_members:
+  - Chunchu Venugopal
+  - Sanith Akula
+submission_file: submission.csv
+approach_summary: >
+  Multi-signal hybrid scorer. No GPU, no LLM API calls. Combines
+  proficiency-weighted skill matching against JD-critical skills, career quality
+  scoring (product vs services, shipped retrieval/ranking/recommendation systems,
+  production scale evidence), behavioral availability signals (recency, response rate,
+  notice period, interview completion), GitHub activity as external validation,
+  and location fit. Includes honeypot detection and JD-aligned disqualifiers
+  (pure services background, primarily CV/speech domain, ghost candidates).
+  Runs in <90s on a 16GB CPU machine.
+ranking_approach: rule_based_weighted_scoring
+uses_embeddings: false
+uses_llm_api: false
+uses_gpu: false
+estimated_runtime_seconds: 90
+ai_tools_used:
+  - Claude (Anthropic) — used for code development and architecture review
+github_repo: https://github.com/akulasanith18/redrob-ranker
+sandbox_link: TBD
